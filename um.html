@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Suspense Text</title>
+<style>
+  #suspense-text {
+    font-size: 2em;
+  }
+</style>
+</head>
+<body>
+  <p id="suspense-text"></p>
+
+  <script>
+    const text = "O mistério se revela lentamente...";
+    const words = text.split(" ");
+    const suspenseText = document.getElementById("suspense-text");
+    let i = 0;
+
+    function revealWord() {
+      if (i < words.length) {
+        suspenseText.textContent += words[i] + " ";
+        i++;
+        setTimeout(revealWord, 500); // Ajuste o delay aqui (em milissegundos)
+      }
+    }
+
+
+
+
+
+
+
+
+    <button id="ir">Ir para Página 2</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    revealWord();
+  </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Meu Site</title>
+<link rel="stylesheet" type="text/css" href="horror.css">
+</head>
+<body>
+
+<audio id="horror" loop>
+  <source src="horror.mp3" type="horror/mpeg">
+  Seu navegador não suporta a tag de áudio.
+</audio>
+
+<button onclick="playAudio()" id="playButton">Reproduzir Música</button>
+<button onclick="nextpage()" id="nextButton">Próxima Página</button>
+
+
+<button id="ir">Ir para Página 2</button>
+
+
+
+
+
+
+
+<button id="ir">Ir</button>
+<button id="voltar">Voltar</button>
+
+<script>
+  const um = document.getElementById("um");
+  const horror = document.getElementById("horror");
+  const irButton = document.getElementById("ir");
+  const voltarButton = document.getElementById("voltar");
+
+  irButton.addEventListener("click", () => {
+    pagina1.classList.remove("active");
+    pagina2.classList.add("active");
+  });
+
+  voltarButton.addEventListener("click", () => {
+    horror.classList.remove("active");
+    um.classList.add("active");
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<audio autoplay loop>
+  <source src="horror.mp3" type="horror/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+
+<h1>Bem-vindo ao meu site!</h1>
+<p>Este é um exemplo de texto.</p>
+
+<head>
+<title>Meu Site</title>
+<link rel="stylesheet" type="text/css" href="horror.js">
+</head>
+
+
+
+
+</body>
+</html>
